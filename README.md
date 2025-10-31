@@ -18,6 +18,7 @@ Last updated: 2025-08-04
     <img width="788" height="443" alt="image" src="https://github.com/user-attachments/assets/7aa221fc-face-4860-919b-8207c99f4f00" />
     
 - [Technology choices for Azure solutions](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/technology-choices-overview)
+- [Introduction to Azure Integration Services Cloud Adoption Framework][https://github.com/Azure/Integration-Services-Landing-Zone-Accelerator] - repo
 
 </details>
 
@@ -244,7 +245,7 @@ From [Choose between Azure messaging services - Event Grid, Event Hubs, and Serv
 > - Event Grid: Event routing and delivery
 > - API Management: API creation, access control, and management
 
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b98d0807-607a-4181-a51a-67fa19ec6876" />
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/afac1692-a25a-448e-9607-c9b452793ea9" />
 
 <details>
 <summary><b>Logic Apps (Orchestration)</b> (Click to expand)</summary>

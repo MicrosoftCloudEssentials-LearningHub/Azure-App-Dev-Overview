@@ -128,7 +128,7 @@ From [Hybrid solution decision tree](https://learn.microsoft.com/en-us/azure/arc
 
 ## Choose a networking service
 
-> his diagram is a **decision-making guide for selecting the right Azure networking and application delivery service** based on whether you are hosting a web application, APIs, or need global distribution and performance optimization.
+> This diagram is a **decision-making guide for selecting the right Azure networking and application delivery service** based on whether you are hosting a web application, APIs, or need global distribution and performance optimization.
 
 <img width="1238" height="1594" alt="image" src="https://github.com/user-attachments/assets/661872a6-3d85-4542-a226-f27dc496e913" />
 

@@ -16,6 +16,8 @@ Last updated: 2025-08-04
 - [Message sessions - First-in, first out (FIFO) pattern](https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-sessions#first-in-first-out-fifo-pattern)
 
     <img width="788" height="443" alt="image" src="https://github.com/user-attachments/assets/7aa221fc-face-4860-919b-8207c99f4f00" />
+    
+- [Technology choices for Azure solutions](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/technology-choices-overview)
 
 </details>
 
@@ -110,6 +112,28 @@ Last updated: 2025-08-04
 > - **PaaS (Platform as a Service):** Offers a `managed platform for app development and deployment` without managing infrastructure. Example: Azure App Service, Azure Functions, Azure SQL Database, Azure SQL Managed Instance.
 > - **SaaS (Software as a Service):** Delivers `fully managed applications over the internet` for productivity and business needs. Example: Microsoft 365, Dynamics 365, Power BI.
 
+
+<img width="550" height="550" alt="image" src="https://github.com/user-attachments/assets/24cff45a-6f9c-4cce-91d4-5dab402a83ef" />
+
+Key foundational components in the traditional cloud service responsibility model: <br/>
+`(On-prem → IaaS → PaaS → SaaS)`
+
+> [!NOTE]
+> They represent the major areas of control and management. However, `these 9 layers are conceptual, not exhaustive.`
+> In reality, `there can be additional sub-layers or specialized services (e.g., security, identity, monitoring, compliance) that span across these layers.`
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b4a4134b-c2e1-4d7f-ae19-e38a9448021e" />
+
+> 1.  **Applications** → End-user software and business apps running on the platform.
+> 2.  **Data** → Information stored, processed, and managed within the system.
+> 3.  **Runtime** → Execution environment for applications (e.g., .NET, Java).
+> 4.  **Middleware** → Software that connects apps and services (e.g., messaging, APIs).
+> 5.  **Operating System (O/S)** → Core system software managing hardware and apps.
+> 6.  **Virtualization** → Abstraction layer enabling multiple OS instances on hardware.
+> 7.  **Servers** → Physical or virtual machines hosting workloads.
+> 8.  **Storage** → Persistent data storage systems (disks, blobs, databases).
+> 9.  **Networking** → Connectivity infrastructure for communication and data transfer.
+
 <details>
 <summary>IaaS (Infrastructure as a Service)</summary>
 
@@ -183,12 +207,15 @@ Last updated: 2025-08-04
 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/c9005aac-1014-41d2-85bc-ae7327b87bf2" />
 
-| **Aspect**          | **Event**                                                                                                              | **Message**                                                                                                                                        | **Stream**                                                                                                      |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| **Definition**      | Lightweight notification that something happened; does **not** carry full business data.                               | Data packet intended for processing; often contains business-critical info with guaranteed delivery.                                               | Continuous flow of data for real-time processing and analytics.                                                 |
-| **Characteristics** | - Fire-and-forget (basic retries only)<br>- Reactive architectures<br>- Small payload (metadata)                       | - Durable storage until processed<br>- Supports sessions, transactions, DLQs<br>- Larger payloads                                                  | - High-throughput ingestion<br>- Partitioned for scalability<br>- Designed for streaming scenarios              |
-| **Azure Service**   | **Event Grid**: Routes events from sources (Blob Storage, IoT Hub) to subscribers (Functions, Logic Apps).             | **Service Bus**: Enterprise messaging with FIFO, sessions, and reliability.                                                                        | **Event Hubs**: Ingest millions of events per second for telemetry and analytics.                               |
+| **Aspect**          | **Event**                                                                                                              | **Message** | **Stream** |
+| ------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Definition**      | Lightweight notification that something happened; does **not** carry full business data.                               | Data packet intended for processing; often contains business-critical info with guaranteed delivery. | Continuous flow of data for real-time processing and analytics.                                                 |
+| **Characteristics** | - Fire-and-forget (basic retries only)<br>- Reactive architectures<br>- Small payload (metadata)                       | - Durable storage until processed<br>- Supports sessions, transactions, DLQs<br>- Larger payloads | - High-throughput ingestion<br>- Partitioned for scalability<br>- Designed for streaming scenarios              |
+| **Azure Service**   | **Event Grid**: Routes events from sources (Blob Storage, IoT Hub) to subscribers (Functions, Logic Apps).             | **Service Bus**: Enterprise messaging with FIFO, sessions, and reliability. | **Event Hubs**: Ingest millions of events per second for telemetry and analytics.                               |
 | **Use Cases**       | - Trigger workflows when a file is uploaded<br>- Notify downstream systems of state changes<br>- Fan-out notifications | - Order processing in e-commerce<br>- Payment workflows requiring guaranteed delivery<br>- Microservice communication with transactional integrity | - IoT telemetry ingestion<br>- Real-time analytics pipelines<br>- Streaming data to Azure Synapse or Databricks |
+
+## Azure App Dev Services 
+
 
 <!-- START BADGE -->
 <div align="center">

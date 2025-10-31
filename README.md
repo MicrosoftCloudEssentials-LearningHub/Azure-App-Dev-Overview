@@ -305,10 +305,61 @@ From [Choose an Azure compute option for microservices](https://learn.microsoft.
 
 ### Choose a hybrid option
 
+> These options enable hybrid and edge computing scenarios, allowing organizations to run Azure services in disconnected, on-premises, or multicloud environments.
+
 <img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/cd933ab9-4085-4bc9-9896-c3b1c59c33c7" />
 
 From [Hybrid solution decision tree](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/hybrid-considerations#hybrid-solution-decision-tree)
- 
+
+<details>
+<summary><b>Diagram explanation</b> (Click to expand)</summary>
+
+> *   This diagram is a **decision-making guide for selecting the right Azure edge or hybrid compute service** based on hosting, deployment, and workload requirements. It starts by asking whether the solution is **existing/custom**, **multicloud**, or **Azure-specified**.
+> *   If the solution is **existing or custom**, the next consideration is whether it is **restricted** or **datacenter-based**.
+>     *   For **restricted environments**, the diagram distinguishes between **mass deployment** (ideal for IoT workloads) and **low-scale deployment** (traditional IT and cloud-native workloads).
+>         *   **Mass deployment** leads to **Azure IoT Edge**, which enables running cloud intelligence locally on IoT devices.
+>     *   For **datacenter-based workloads**, the decision focuses on whether the workload uses **containers**, **VMs**, or **SQL**.
+>         *   **Containers** → Use **Azure Arc-enabled Kubernetes** for hybrid container orchestration.
+>         *   **VMware workloads** → Use **Azure Arc-enabled VMware, SCVMM, or individual servers** for management.
+>         *   **SQL workloads** → Use **Azure Arc-enabled data services** for hybrid database capabilities.
+> *   If the solution is **multicloud**, similar options apply for containers, VMs, and SQL, leveraging **Azure Arc** for unified management across clouds.
+> *   If the solution is **Azure-specified**, the decision moves to **hardware type** and **workload type**:
+>     *   **Hardware as a service** or **Azure-like datacenter** leads to **Azure Local** or **Azure Stack Hub** for full Azure capabilities on-premises.
+>     *   For **data transfer and compute**, the diagram offers **Azure Stack Edge** devices in different models:
+>         *   **Datacenter** → Azure Stack Edge Pro GPU
+>         *   **Portable** → Azure Stack Edge Pro 2
+>         *   **Ruggedized** → Azure Stack Edge Mini R or Pro R
+
+</details>
+
+### Choose a networking service
+
+> his diagram is a **decision-making guide for selecting the right Azure networking and application delivery service** based on whether you are hosting a web application, APIs, or need global distribution and performance optimization.
+
+<img width="1238" height="1594" alt="image" src="https://github.com/user-attachments/assets/661872a6-3d85-4542-a226-f27dc496e913" />
+
+From [Choose a load balancing solution for your scenario](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/load-balancing-overview#choose-a-load-balancing-solution-for-your-scenario)
+
+<details>
+<summary><b>Diagram explanation</b> (Click to expand)</summary>
+
+> *   It starts by asking if the workload is a **web application (HTTP/HTTPS)**.
+>     *   If **No**, and the application is not internet-facing, the recommendation is **Azure Load Balancer** for internal traffic distribution.
+>     *   If **Yes**, and the application is internet-facing, the next question is whether it is **global or deployed in multiple regions**.
+>         *   If **Yes**, the solution combines **Traffic Manager + Azure Load Balancer** for global DNS-based routing and regional load balancing.
+> *   For **API-only hosting**, the diagram suggests **API Management** for secure API publishing and lifecycle management.
+> *   If the application is internet-facing and not limited to APIs, the next consideration is whether you need **SSL offload or application-layer processing per request**.
+>     *   If **Yes**, use **Azure Front Door + Application Gateway** for global load balancing with advanced Layer 7 features.
+>     *   If hosting only APIs with SSL offload, use **Azure Front Door + API Management**.
+> *   For hosting scenarios like **PaaS (App Service, Functions)**, **IaaS (VMs)**, or **AKS**, the diagram recommends:
+>     *   **Azure Front Door** for global routing and acceleration.
+>     *   Combine with **Application Gateway ingress controller** for AKS or **Azure Load Balancer** for VMs.
+> *   If **performance acceleration** is required, **Azure Front Door** is the primary choice because it provides global edge caching and routing.
+> *   For workloads that do not require global distribution but need Layer 7 routing, **Application Gateway** is recommended.
+>     *   For API-only workloads in this scenario, combine **Application Gateway + API Management**.
+
+</details>
+
 <!-- START BADGE -->
 <div align="center">
   <img src="https://img.shields.io/badge/Total%20views-1532-limegreen" alt="Total views">

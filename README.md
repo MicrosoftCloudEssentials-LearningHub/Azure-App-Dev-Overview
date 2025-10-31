@@ -19,6 +19,15 @@ Last updated: 2025-08-04
 
 </details>
 
+
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
+
+- [Types of cloud computing](#types-of-cloud-computing)
+- [Event, Message, Stream](#event-message-stream)
+
+</details>
+
 ## Types of cloud computing
 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/4088401d-c4ec-4e6d-9236-01a0658a767f" />
@@ -156,6 +165,14 @@ Last updated: 2025-08-04
 -   **Use Cases:** Productivity tools, CRM, analytics, low-code/no-code app development.
 
 </details>
+
+> [!NOTE]
+> - **Control decreases as you move from On-premises → IaaS → PaaS → SaaS.**
+> - Trade-off: **More convenience = Less control.**
+> -   Choose based on:
+>     *   **IaaS:** When you need OS-level control.
+>     *   **PaaS:** When you want to focus on app development.
+>     *   **SaaS:** When you want zero infrastructure management.
 
 ## Event, Message, Stream
 

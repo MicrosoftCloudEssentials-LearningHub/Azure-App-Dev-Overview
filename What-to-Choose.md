@@ -1,4 +1,4 @@
-## What to Choose - Azure App Dev Services Overview
+# What to Choose - Azure App Dev Services Overview
 
 
 Costa Rica

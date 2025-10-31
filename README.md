@@ -236,6 +236,99 @@ From [Choose between Azure messaging services - Event Grid, Event Hubs, and Serv
 
 > Click here to read more about [What to Choose - Azure App Dev Services Overview](./What-to-Choose.md)
 
+> - Logic Apps: Orchestration of workflows and business processes
+> - Functions: Serverless compute execution
+> - Data Factory: Bulk data movement and transformation
+> - Event Hubs: Massive data ingestion
+> - Service Bus: Enterprise messaging
+> - Event Grid: Event routing and delivery
+> - API Management: API creation, access control, and management
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b98d0807-607a-4181-a51a-67fa19ec6876" />
+
+<details>
+<summary><b>Logic Apps (Orchestration)</b> (Click to expand)</summary>
+
+> Automates workflows and integrates apps, data, and services across organizations.
+*   **Key Features:**
+    *   Visual designer for building workflows.
+    *   Connectors for SaaS apps, on-premises systems, and APIs.
+    *   Supports B2B integration with EDI standards.
+*   **Use Case:** Automating order processing, approvals, or integrating CRM with ERP.
+</details>
+
+<details>
+<summary><b>Azure Functions (Processing)</b> (Click to expand)</summary>
+
+> Provides serverless compute for executing code in response to events.
+*   **Key Features:**
+    *   Pay-per-execution model.
+    *   Supports multiple languages (C#, Python, JavaScript).
+    *   Integrates with Event Grid, Service Bus, and Event Hubs.
+*   **Use Case:** Real-time data processing, image resizing, or IoT telemetry handling.
+
+</details>
+
+<details>
+<summary><b>Data Factory (Data Movement)</b> (Click to expand)</summary>
+
+> ETL (Extract, Transform, Load) service for moving and transforming data at scale.
+*   **Key Features:**
+    *   Supports hybrid data integration (on-premises + cloud).
+    *   Built-in connectors for databases, SaaS apps, and big data stores.
+    *   Orchestration of data pipelines.
+*   **Use Case:** Migrating data from SQL Server to Azure Synapse Analytics.
+
+</details>
+
+<details>
+<summary><b>Event Hubs (Data Ingestion)</b> (Click to expand)</summary>
+
+> Handles massive data ingestion for real-time analytics.
+*   **Key Features:**
+    *   High-throughput event streaming platform.
+    *   Integrates with Azure Stream Analytics and Synapse.
+    *   Supports millions of events per second.
+*   **Use Case:** Collecting telemetry from IoT devices or application logs.
+
+</details>
+
+<details>
+<summary><b>Service Bus (Messaging)</b> (Click to expand)</summary>
+
+> Enterprise-grade messaging for reliable communication between services.
+*   **Key Features:**
+    *   Queues and topics for decoupled communication.
+    *   Supports transactions and dead-letter queues.
+    *   Enables asynchronous messaging patterns.
+*   **Use Case:** Order processing systems where components communicate asynchronously.
+
+</details>
+
+<details>
+<summary><b>Event Grid (Event Routing)</b> (Click to expand)</summary>
+
+> Event-driven architecture for routing events between sources and handlers.
+*   **Key Features:**
+    *   Low-latency event delivery.
+    *   Supports custom topics and system events.
+    *   Integrates with Functions, Logic Apps, and Storage.
+*   **Use Case:** Triggering workflows when a file is uploaded to Blob Storage.
+
+</details>
+
+<details>
+<summary><b>API Management (Exposure)</b> (Click to expand)</summary>
+
+> Securely expose APIs to internal and external consumers.
+*   **Key Features:**
+    *   API gateway with throttling, caching, and transformation.
+    *   Developer portal for API documentation.
+    *   Analytics and monitoring for API usage.
+*   **Use Case:** Publishing REST APIs for mobile apps or partner integrations.
+
+</details>
+
 <!-- START BADGE -->
 <div align="center">
   <img src="https://img.shields.io/badge/Total%20views-1532-limegreen" alt="Total views">

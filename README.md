@@ -119,7 +119,7 @@ Key foundational components in the traditional cloud service responsibility mode
 `(On-prem → IaaS → PaaS → SaaS)`
 
 > [!NOTE]
-> They represent the major areas of control and management. However, `these 9 layers are conceptual, not exhaustive.`
+> `These 9 layers are conceptual, not exhaustive.` They represent the major areas of control and management.
 > In reality, `there can be additional sub-layers or specialized services (e.g., security, identity, monitoring, compliance) that span across these layers.`
 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b4a4134b-c2e1-4d7f-ae19-e38a9448021e" />

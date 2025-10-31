@@ -216,6 +216,9 @@ Key foundational components in the traditional cloud service responsibility mode
 
 ## Azure App Dev Services 
 
+> Click here to read more about [Technology choices for Azure solutions](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/technology-choices-overview)
+
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/0713d101-94ef-40a9-9e55-0a780036ce7a" />
 
 <!-- START BADGE -->
 <div align="center">

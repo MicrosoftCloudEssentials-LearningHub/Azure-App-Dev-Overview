@@ -18,7 +18,14 @@ Last updated: 2025-08-04
     <img width="788" height="443" alt="image" src="https://github.com/user-attachments/assets/7aa221fc-face-4860-919b-8207c99f4f00" />
     
 - [Technology choices for Azure solutions](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/technology-choices-overview)
-- [Introduction to Azure Integration Services Cloud Adoption Framework][https://github.com/Azure/Integration-Services-Landing-Zone-Accelerator] - repo
+- [Introduction to Azure Integration Services Cloud Adoption Framework](https://github.com/Azure/Integration-Services-Landing-Zone-Accelerator) - repo
+- [Scenario 1: Reference Implementation](https://github.com/Azure/Integration-Services-Landing-Zone-Accelerator/blob/main/docs/scenario1/Reference%20Implementation.md)
+
+  <img width="1632" height="911" alt="image" src="https://github.com/user-attachments/assets/c0345100-385f-4945-87a6-599c6ffa1550" />
+
+- [Scenario 2: Reference Implementation](https://github.com/Azure/Integration-Services-Landing-Zone-Accelerator/blob/main/docs/scenario2/Reference%20Implementation.md)
+
+  <img width="1236" height="625" alt="image" src="https://github.com/user-attachments/assets/dc14384e-9f97-48b1-b809-153231993125" />
 
 </details>
 
